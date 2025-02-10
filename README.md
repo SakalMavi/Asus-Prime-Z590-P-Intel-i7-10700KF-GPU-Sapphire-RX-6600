@@ -53,49 +53,6 @@ This Hackintosh was created with help of some motivating projects like [SchmockL
 
 ---
 
-### Install macOS
-
-#### 1. Installer-Drive
-
-**a) macOS Installer**
-
-To create a working macOS Installer-Drive, you need the following:
-
-- An empty USB flash drive (minimum 16GB)
-- A device already running macOS with App Store access
-
-**a) macOS Installer**
-
-- Open the Mac App Store on a device running macOS
-- Download `Install macOS Monterey` application
-- Close Installer when it opens up automatically
-- Follow this guide: [How to Create a Bootable macOS Monterey Installer](https://mrmacintosh.com/how-to-create-a-bootable-macos-12-beta-usb-drive-in-5-min/)
-  
-  or create Installer-Drive with this command:
-
-  ```sh
-  sudo /Applications/Install\ macOS\ Monterey.app/Contents/Resources/createinstallmedia --volume /Volumes/USB
-  ```
-
-**b) OpenCore**
-
-- Download latest OpenCore: [acidanthera/opencorepkg](https://github.com/acidanthera/opencorepkg/releases)
-  - Chose `debug` for installation and testing or `release` for final use
-- Mount `EFI` partition of Installer-Drive (e.g. with OpenCore Configurator)
-- Follow this guide [OpenCore-Install-Guide](https://dortania.github.io/OpenCore-Install-Guide/installer-guide/)
-  - Basically the files mentioned in [file-swaps](https://dortania.github.io/OpenCore-Install-Guide/troubleshooting/debug.html#file-swaps) need to be copied/updated
-    - Add `OpenCanopy.efi` to `EFI/OC/Drivers` for GUI picker
-    - Add `OpenHfsPlus.efi` to `EFI/OC/Drivers` for HFS+ support
-  - Repeat this step when switching from `debug` to `release` version
-
-**c) Patches and Kexts**
-
-- Copy all ACPI patches from/to `EFI/OC/ACPI/`
-- Copy `config.plist` from/to `EFI/OC/config.plist`
-- Copy all kexts from/to `EFI/OC/Kexts/`
-
----
-
 #### 2. BIOS Settings
 
 - Update to version 1601 (firmware in [BIOS](/BIOS) folder)
