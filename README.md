@@ -51,17 +51,6 @@ This Hackintosh was created with help of some motivating projects like [SchmockL
 | Graphics     | Sapphire RX 6600 Plus 8GB                                         | (https://www.sapphiretech.com/en/consumer/11310_05_20g-radeon-rx-6600-8g-gddr6)                                                                                                                                                                                                                                | 
 
 
-#### Performance
-
-Geekbench 5 Score of Intel Core i7 11700K CPU
-![i7 11700K CPU Score](Images/cpu-score.png)
-
-Geekbench 5 Score (Metal) of Radeon RX 6600 XT GPU
-![RX 6600 XT GPU Score](Images/rx6600xt-score.png)
-
-Blackmagic Disk Speed of Samsung Pro 980 NVMe SSD
-![NVMe Pro 980 Speed](Images/disk-speed.png)
-
 ---
 
 ### Install macOS
