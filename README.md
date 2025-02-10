@@ -141,7 +141,7 @@ This Hackintosh was created with help of some motivating projects like [SchmockL
 
 **e) Audio**
 
-- (Optional) Install VoodooHDA by following instructions in [Docs/AUDIO](Docs/AUDIO.md).
+- (Optional) AppleALC layout-id 12.
 
 ---
 
